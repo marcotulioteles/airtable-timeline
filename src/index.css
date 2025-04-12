@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer base {
+  html {
+    line-height: 1;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Fredoka", Arial;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #000000;
+  }
+
+  button {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: inherit;
+    transition: all 0.5s ease-in-out;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Sen", Arial;
+  }
+
+  .col-hover-area {
+    position: relative;
+  }
+
+  .col-hover-area::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 123, 255, 0.05); /* light blue tint */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .col-hover-area:hover::before {
+    opacity: 1;
+  }
+}
