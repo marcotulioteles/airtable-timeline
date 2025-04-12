@@ -20,8 +20,8 @@ I'm a **Frontend Engineer** passionate about crafting smooth, accessible, and hi
 
 ## ✅ What I Like About This Implementation
 
-- **Custom Grid Layout**: The use of pure CSS grid gives full control over date alignment and visual spacing, without relying on heavy timeline libraries.
-- **Snapped Drag & Resize**: Dragging and resizing items snaps to logical column positions, making the interface feel precise and intuitive.
+- **Custom Grid Layout**: The use of pure CSS grid (supported by TailwindCSS) gives full control over date alignment and visual spacing, without relying on heavy timeline libraries.
+- **Snapped Drag & Resize**: Dragging and resizing items snaps to logical column positions, making the interface feel more intuitive.
 - **Polished UI**: Soft shadows, modern fonts, consistent lane spacing, and responsive zoom controls provide a user-friendly look and feel.
 - **Modular Codebase**: The component is cleanly split into smaller files (`Timeline`, `ZoomControls`, `TimelineItem`, etc.) for maintainability and reusability.
 
